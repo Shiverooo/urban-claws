@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 350ms;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background-color: wheat;
+    background-image: url(../pics/play.gif);
+    background-size: 550px;
+    background-position: bottom -75px right;
+    background-repeat: no-repeat;
+}
+
+.container .logo img {
+    width: 100%;
+    margin-top: -15%;
+    cursor: pointer;
+    transition: scale 0.3 ease;
+}
+
+.container .logo img:hover {
+    scale: 1.05;
+}
+
+.container .title {
+    display: flex;
+    justify-content: center;
+    color: #000;
+    margin-top: -20%;
+    font-family: 'Lobster', cursive;
+    font-size: 80px;
+    font-weight: 800;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.button {
+    display: grid;
+    place-items: center;
+}
+
+.button .playbtn {
+    font-size: 80px;
+    color: white;
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+    height: 1.3em;
+    width: 1.3em;
+    border-radius: 50%;
+    border: none;
+    background: hsla(250, 100%, 75%, 1);
+    cursor: pointer;
+    transition: 0.3s;
+    animation: pulse 1.3s ease infinite;
+}
+
+.button .playbtn::before {
+    content: "";
+    display: inline-block;
+    border-left: 0.4em solid;
+    border-top: 0.20em solid transparent;
+    border-bottom: 0.20em solid transparent;
+    margin-right: -0.08em;
+}
+
+.button .playbtn:hover {
+    color: aqua;
+    background: hsla(250, 100%, 70%, 1);
+    scale: 1.05;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0em 0em 0em 0em hsla(250, 100%, 75%, 0.8);
+    }
+
+    100% {
+        box-shadow: 0em 0em 0em 0.3em hsla(250, 100%, 75%, 0);
+    }
+}
+
+@media (max-width: 807px) {
+    body {
+        background-position: bottom -85px right -70px;
+    }
+
+    .container {
+        margin-top: -10px;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+/* PAGE LOADEr */
+.page-loader {
+    width: 100%;
+    height: 110vh;
+    position: fixed;
+    background: #333;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    position: relative;
+    top: 35%;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    background-color: var(--primary);
+    padding: 40px;
+    border: 15px double var(--alt-red);
+    border-radius: 100%;
+    -webkit-animation: sk-scaleout 1.5s infinite ease-in-out;
+    animation: sk-scaleout 1.5s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+    0% {
+        -webkit-transform: scale(0)
+    }
+
+    100% {
+        -webkit-transform: scale(1.0);
+        opacity: 0;
+    }
+}
+
+@keyframes sk-scaleout {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    100% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+        opacity: 0;
+    }
+}
+
+@media (max-width: 617px) {
+    body {
+        background-size: 450px;
+        background-position: bottom -70px right -95px;
+    }
+
+    .container {
+        margin-top: 10px;
+    }
+
+    .container .logo img {
+        width: 90%;
+        margin-left: 50px;
+    }
+
+    .title {
+        margin: 5px 0 0 170px;
+    }
+
+    .button .playbtn {
+        font-size: 70px;
+        margin-left: 30px;
+        margin-top: -5px;
+    }
+}
+
+@media (max-width: 554px) {
+    body {
+        background-size: 450px;
+        background-position: bottom -110px right -100px;
+    }
+
+    .container {
+        margin-top: 10px;
+    }
+
+    .title {
+        margin: 5px 0 0 150px;
+    }
+
+    .button .playbtn {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 523px) {
+    body {
+        background-size: 400px;
+        background-position: bottom -95px right -95px;
+    }
+
+    .container {
+        margin-top: 10px;
+    }
+
+    .container .logo img {
+        width: 90%;
+        margin-left: 40px;
+    }
+
+    .title {
+        margin: 5px 0 0 100px;
+    }
+
+    .button .playbtn {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 444px) {
+    body {
+        background-size: 400px;
+        background-position: bottom -130px right -70px;
+    }
+
+    .container {
+        margin-top: 10px;
+    }
+
+    .container .logo img {
+        width: 90%;
+        margin-left: 30px;
+    }
+
+    .title {
+        margin-left: 55px;
+    }
+
+    .button .playbtn {
+        font-size: 70px;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+}

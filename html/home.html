@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Claws | HOME</title>
+    <link rel="icon" href="../pics/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/home.css">
+    <script src="https://kit.fontawesome.com/b9a52165aa.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="page-loader">
+        <div>
+            <img class="spinner" src="../pics/icon-2.png" width="50%">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="logo">
+            <a href="../index.html"><img src="../pics/icon-2.png"></a>
+        </div>
+        <div class="text-box">
+            <div class="email-icon">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="email">
+                <h2>jerson.mamangun@gmail.com</h2>
+            </div>
+        </div>
+        <div class="text-box">
+            <div class="phone-icon">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="phone">
+                <h2>09635338631</h2>
+            </div>
+        </div>
+        <div class="soc-med">
+            <div class="facebook">
+                <a target="_self" href="https://web.facebook.com/profile.php?id=100091626772999"><i
+                        class="fa-brands fa-square-facebook"></i></a>
+            </div>
+            <div class="instagram">
+                <a target="_self" href="https://instagram.com/urban_claws?igshid=NjNlMDhmYTc="><i
+                        class="fa-brands fa-square-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAV-BAR -->
+    <div class="header">
+        <div class="logo"></div>
+        <div class="navbar">
+            <ul class="links">
+                <li><a href="../html/home.html">Home</a></li>
+                <li><a href="../html/breeds.html">Breeds</a></li>
+                <li><a href="../html/foods.html">Foods</a></li>
+                <li><a href="../html/toys.html">Toys</a></li>
+                <li><a href="../html/about.html">About</a></li>
+            </ul>
+
+            <!-- DROPDOWN MENU -->
+            <div class="dropdown_menu">
+                <li><a href="../html/home.html">Home</a></li>
+                <li><a href="../html/breeds.html">Breeds</a></li>
+                <li><a href="../html/foods.html">Foods</a></li>
+                <li><a href="../html/toys.html">Toys</a></li>
+                <li><a href="../html/about.html">About</a></li>
+            </div>
+
+            <!-- SEARCH BAR -->
+            <div class="search-box">
+                <input type="text" class="search" id="find" placeholder="Search" onkeyup="search()">
+                <span class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+            </div>
+
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- IMAGE SLIDER -->
+    <div class="slider">
+        <div class="myslider fade">
+            <div class="txt">
+                <h1>What is cats?</h1>
+                <p>The cat is a domestic species of small carnivorous mammal.
+                    <br>It is only domesticated species in family Felidae and commonly referred to
+                    <br>the domestic cat or house cat.
+                </p>
+            </div>
+            <img src="../pics/cat-slider-1.jpg">
+        </div>
+
+        <div class="myslider fade">
+            <div class="txt">
+                <h1>About cats</h1>
+                <p>Cats possess other features of their wild relatives being basically carnivorous,
+                    <br>remarkably agile and powerful, and finely coordinated in movement.
+                </p>
+            </div>
+            <img src="../pics/cat-slider-2.jpg">
+        </div>
+
+        <div class="myslider fade">
+            <div class="txt">
+                <h1>Origin and history of cats</h1>
+                <p>The ancestor of modern domestic cats was the last to appear,
+                    <br> about 3.4 million years ago. A small wildcat species was first domesticated
+                    <br>in Near East 8,000 - 10,000 years ago.
+                </p>
+            </div>
+            <img src="../pics/cat-slider-3.jpg">
+        </div>
+        <a class="prev" onclick="plusSlides(-   1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="dotsbox" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <div class="card-container">
+        <div class="row">
+            <div class="column">
+                <div class="effect">
+                    <div class="effect-img">
+                        <img src="../pics/cat-box-1.jpg">
+                    </div>
+                    <div class="effect-text">
+                        <div class="inner">
+                            <h2>Facts About Cats</h2>
+                            <p>Cats are nearsighted, but their peripheral vision and night
+                                vision are much better than that of humans.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="effect">
+                    <div class="effect-img">
+                        <img src="../pics/cat-box-2.jpg">
+                    </div>
+                    <div class="effect-text">
+                        <div class="inner">
+                            <h2>Facts About Cats</h2>
+                            <p>Cats have 230 bones, while humans only have 206.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="effect">
+                    <div class="effect-img">
+                        <img src="../pics/cat-box-3.jpg">
+                    </div>
+                    <div class="effect-text">
+                        <div class="inner">
+                            <h2>Facts About Cats</h2>
+                            <p>A cat's average lifespan increased by a year over the span of time between 2002 and
+                                2012,
+                                according to a study by Banfield Pet Hospital.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script>
+        $(window).on('load', function () {
+            setTimeout(function () {
+                $('.page-loader').fadeOut('slow');
+            }, 1000);
+        });
+    </script>
+</body>
+
+</html>

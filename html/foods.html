@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Claws | FOODS</title>
+    <link rel="icon" href="../pics/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/foods.css">
+    <script src="https://kit.fontawesome.com/b9a52165aa.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="page-loader">
+        <div>
+            <img class="spinner" src="../pics/icon-2.png" width="50%">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="logo">
+            <a href="../index.html"><img src="../pics/icon-2.png"></a>
+        </div>
+        <div class="text-box">
+            <div class="email-icon">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="email">
+                <h2>jerson.mamangun@gmail.com</h2>
+            </div>
+        </div>
+        <div class="text-box">
+            <div class="phone-icon">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="phone">
+                <h2>09635338631</h2>
+            </div>
+        </div>
+        <div class="soc-med">
+            <div class="facebook">
+                <a target="_self" href="https://web.facebook.com/profile.php?id=100091626772999"><i
+                        class="fa-brands fa-square-facebook"></i></a>
+            </div>
+            <div class="instagram">
+                <a target="_self" href="https://instagram.com/urban_claws?igshid=NjNlMDhmYTc="><i
+                        class="fa-brands fa-square-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAV-BAR -->
+    <div class="header">
+        <div class="logo"></div>
+        <div class="navbar">
+            <ul class="links">
+                <li><a href="../html/home.html">Home</a></li>
+                <li><a href="../html/breeds.html">Breeds</a></li>
+                <li><a href="../html/foods.html">Foods</a></li>
+                <li><a href="../html/toys.html">Toys</a></li>
+                <li><a href="../html/about.html">About</a></li>
+            </ul>
+
+            <!-- DROPDOWN MENU -->
+            <div class="dropdown_menu">
+                <li><a href="../html/home.html">Home</a></li>
+                <li><a href="../html/breeds.html">Breeds</a></li>
+                <li><a href="../html/foods.html">Foods</a></li>
+                <li><a href="../html/toys.html">Toys</a></li>
+                <li><a href="../html/about.html">About</a></li>
+            </div>
+
+            <!-- SEARCH BAR -->
+            <div class="search-box">
+                <input type="text" class="search" id="find" placeholder="Search" onkeyup="search()">
+                <span class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+            </div>
+
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- VEGETABLE FOOD -->
+    <div class="food-container">
+        <h3 class="title">Vegetable for cats</h3>
+
+        <div class="vege-container">
+            <div class="foods" data-name="f-1">
+                <img src="../pics/veg-1.png">
+                <h3>Asparagus</h3>
+                <div class="name">Vegetable</div>
+            </div>
+
+            <div class="foods" data-name="f-2">
+                <img src="../pics/veg-2.png">
+                <h3>Broccoli</h3>
+                <div class="name">Vegetable</div>
+            </div>
+
+            <div class="foods" data-name="f-3">
+                <img src="../pics/veg-3.png">
+                <h3>Carrots</h3>
+                <div class="name">Vegetable</div>
+            </div>
+
+            <div class="foods" data-name="f-4">
+                <img src="../pics/veg-4.png">
+                <h3>Green Beans</h3>
+                <div class="name">Vegetable</div>
+            </div>
+
+            <div class="foods" data-name="f-5">
+                <img src="../pics/veg-5.png">
+                <h3>Pumpkin</h3>
+                <div class="name">Vegetable</div>
+            </div>
+
+            <div class="foods" data-name="f-6">
+                <img src="../pics/veg-6.png">
+                <h3>Spinach</h3>
+                <div class="name">Vegetable</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PREVIEW -->
+    <div class="products-preview">
+        <div class="preview" data-target="f-1">
+            <i class="fas fa-times"></i>
+            <img src="../pics/veg-1.png" alt="">
+            <h3>Asparagus</h3>
+            <span>Vegetable</span>
+            <p>Your cat might enjoy a small serving of steamed, chopped asparagus once in a while.
+                Make sure it is cooked and cooled. </p>
+        </div>
+
+        <div class="preview" data-target="f-2">
+            <i class="fas fa-times"></i>
+            <img src="../pics/veg-2.png" alt="">
+            <h3>Broccoli</h3>
+            <span>Vegetable</span>
+            <p>Broccoli is considered non-toxic and can be served steamed and cooled to cats.
+                Remember to only feed this as a rare treat and in small quantities.</p>
+        </div>
+
+        <div class="preview" data-target="f-3">
+            <i class="fas fa-times"></i>
+            <img src="../pics/veg-3.png" alt="">
+            <h3>Carrots</h3>
+            <span>Vegetable</span>
+            <p>Cats can definitely eat steamed carrots.
+                They are high in fiber and packed with a bunch of yummy nutrition. </p>
+        </div>
+
+        <div class="preview" data-target="f-4">
+            <i class="fas fa-times"></i>
+            <img src="../pics/veg-4.png" alt="">
+            <h3>Green Beans</h3>
+            <span>Vegetable</span>
+            <p>Green beans are considered safe for cats, and they are a
+                good source of fiber, protein, and healthy vitamins.</p>
+        </div>
+
+        <div class="preview" data-target="f-5">
+            <i class="fas fa-times"></i>
+            <img src="../pics/veg-5.png" alt="">
+            <h3>Pumpkin</h3>
+            <span>Vegetable</span>
+            <p>Pumpkin is a great source of fiber and vitamins for your cat.
+                Pumpkin can also help with issues around constipation or even
+                complications surrounding impactions due to hairballs.</p>
+        </div>
+
+        <div class="preview" data-target="f-6">
+            <i class="fas fa-times"></i>
+            <img src="../pics/veg-6.png" alt="">
+            <h3>Spinach</h3>
+            <span>Vegetable</span>
+            <p>Cats naturally like leafy greens, and spinach carries
+                quite a few beneficial vitamins for your cat.</p>
+        </div>
+
+        <!-- WET CAT FOOD -->
+        <div class="preview" data-target="w-1">
+            <i class="fas fa-times"></i>
+            <img src="../pics/wet-food-1.png" alt="">
+            <h3>Instinct Original Grain-Free Pâté</h3>
+            <span>Wet Can Food</span>
+            <p>Chicken, turkey, and chicken liver make a rich, satisfying high-protein meal.</p>
+        </div>
+
+        <div class="preview" data-target="w-2">
+            <i class="fas fa-times"></i>
+            <img src="../pics/wet-food-2.png" alt="">
+            <h3>Purina Pro Plan True Nature Turkey & Chicken Entrée</h3>
+            <span>Wet Can Food</span>
+            <p>This high-protein poultry recipe is a great diet for most adult cats.</p>
+        </div>
+
+        <div class="preview" data-target="w-3">
+            <i class="fas fa-times"></i>
+            <img src="../pics/wet-food-3.png" alt="">
+            <h3>Fancy Feast Grilled Chicken Feast in Gravy</h3>
+            <span>Wet Can Food</span>
+            <p>This recipe leads with grilled chicken.</p>
+        </div>
+
+        <div class="preview" data-target="w-4">
+            <i class="fas fa-times"></i>
+            <img src="../pics/wet-food-4.png" alt="">
+            <h3>Merrick Purrfect Bistro Chicken Recipe Pâté</h3>
+            <span>Wet Can Food</span>
+            <p>This chicken recipe is packed with protein along with antioxidants and omega-3 fatty acids.</p>
+        </div>
+
+        <div class="preview" data-target="w-5">
+            <i class="fas fa-times"></i>
+            <img src="../pics/wet-food-5.png" alt="">
+            <h3>Tiki Cat Puka Puka Luau Succulent Chicken</h3>
+            <span>Wet Can Food</span>
+            <p>Shredded chicken in chicken consommé is designed to engage even picky eaters.</p>
+        </div>
+
+        <div class="preview" data-target="w-6">
+            <i class="fas fa-times"></i>
+            <img src="../pics/wet-food-6.png" alt="">
+            <h3>Wellness Pâté Chicken Entrée</h3>
+            <span>Wet Can Food</span>
+            <p>The proteins in this smooth pâté come from chicken and turkey.</p>
+        </div>
+
+        <!-- DRY CAT FOOD -->
+        <div class="preview" data-target="d-1">
+            <i class="fas fa-times"></i>
+            <img src="../pics/dry-food-1.png" alt="">
+            <h3>Crave Indoor Adult Cat Food</h3>
+            <span>Dry Can Food</span>
+            <p>It comes in various flavors, including chicken, chicken with salmon,
+                salmon with ocean fish, turkey, chicken, and duck blend.</p>
+        </div>
+
+        <div class="preview" data-target="d-2">
+            <i class="fas fa-times"></i>
+            <img src="../pics/dry-food-2.png" alt="">
+            <h3>Blue Buffalo Tastefuls Weight Control Adult Dry Cat Food</h3>
+            <span>Dry Can Food</span>
+            <p>It provides an optimal blend of protein and calories to help
+                your cat achieve and maintain their ideal body mass.
+                Real deboned meat is the first ingredient.</p>
+        </div>
+
+        <div class="preview" data-target="d-3">
+            <i class="fas fa-times"></i>
+            <img src="../pics/dry-food-3.png" alt="">
+            <h3>Orijen Cat & Kitten Dry Food</h3>
+            <span>Dry Can Food</span>
+            <p>It's formulated with fresh, whole ingredients like free-range chicken,
+                cage-free eggs, and wild-caught fish, providing your
+                developing kitten with the nutrients they need to grow.</p>
+        </div>
+
+        <div class="preview" data-target="d-4">
+            <i class="fas fa-times"></i>
+            <img src="../pics/dry-food-4.png" alt="">
+            <h3>Royal Canin Indoor Dry</h3>
+            <span>Dry Can Food</span>
+            <p>This cat food contains optimal portions of chicken meal, animal fat, vegetable fiber,
+                carbohydrates, vitamins, and minerals. The highly digestible and
+                metabolizable ingredients keep your adult cat healthy and satisfied.</p>
+        </div>
+
+        <div class="preview" data-target="d-5">
+            <i class="fas fa-times"></i>
+            <img src="../pics/dry-food-5.png" alt="">
+            <h3>Castor & Pollux Organix</h3>
+            <span>Dry Can Food</span>
+            <p>This grain-free dry cat food is cooked in a certified organic kitchen.
+                The number-one ingredient is free-range chicken, which is combined
+                with a nutritional superfood blend of cranberries, coconut oil, and flaxseed.</p>
+        </div>
+
+        <div class="preview" data-target="d-6">
+            <i class="fas fa-times"></i>
+            <img src="../pics/dry-food-6.png" alt="">
+            <h3>Wellness Core</h3>
+            <span>Dry Can Food</span>
+            <p>The recipes contain real poultry or fish as the main ingredient and includes animal proteins
+                and fats, amino acids, vitamins, minerals, and probiotics.</p>
+        </div>
+
+    </div>
+
+    <!-- WET CAT FOOD -->
+    <div class="food-container">
+        <h3 class="title-2">Wet Cat Food</h3>
+
+        <div class="vege-container">
+            <div class="foods" data-name="w-1">
+                <img src="../pics/wet-food-1.png">
+                <h3>Instinct Original Grain-Free Pâté</h3>
+                <div class="name">Wet Cat Food</div>
+            </div>
+
+            <div class="foods" data-name="w-2">
+                <img src="../pics/wet-food-2.png">
+                <h3>Purina Pro Plan True Nature Turkey & Chicken Entrée</h3>
+                <div class="name">Wet Cat Food</div>
+            </div>
+
+            <div class="foods" data-name="w-3">
+                <img src="../pics/wet-food-3.png">
+                <h3>Fancy Feast Grilled Chicken Feast in Gravy</h3>
+                <div class="name">Wet Cat Food</div>
+            </div>
+
+            <div class="foods" data-name="w-4">
+                <img src="../pics/wet-food-4.png">
+                <h3>Merrick Purrfect Bistro Chicken Recipe Pâté</h3>
+                <div class="name">Wet Cat Food</div>
+            </div>
+
+            <div class="foods" data-name="w-5">
+                <img src="../pics/wet-food-5.png">
+                <h3>Tiki Cat Puka Puka Luau Succulent Chicken</h3>
+                <div class="name">Wet Cat Food</div>
+            </div>
+
+            <div class="foods" data-name="w-6">
+                <img src="../pics/wet-food-6.png">
+                <h3>Wellness Pâté Chicken Entrée</h3>
+                <div class="name">Wet Cat Food</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DRY CAT FOOD -->
+    <div class="food-container">
+        <h3 class="title-3">Dry Cat Food</h3>
+
+        <div class="vege-container">
+            <div class="foods" data-name="d-1">
+                <img src="../pics/dry-food-1.png">
+                <h3>Crave Indoor Adult Cat Food</h3>
+                <div class="name">Dry Cat Food</div>
+            </div>
+
+            <div class="foods" data-name="d-2">
+                <img src="../pics/dry-food-2.png">
+                <h3>Blue Buffalo Tastefuls Weight Control Adult Dry Cat Food</h3>
+                <div class="name">Dry Cat Food</div>
+            </div>
+
+            <div class="foods" data-name="d-3">
+                <img src="../pics/dry-food-3.png">
+                <h3>Orijen Cat & Kitten Dry Food</h3>
+                <div class="name">Dry Cat Food</div>
+            </div>
+
+            <div class="foods" data-name="d-4">
+                <img src="../pics/dry-food-4.png">
+                <h3>Royal Canin Indoor Dry</h3>
+                <div class="name">Dry Cat Food</div>
+            </div>
+
+            <div class="foods" data-name="d-5">
+                <img src="../pics/dry-food-5.png">
+                <h3>Castor & Pollux Organix</h3>
+                <div class="name">Dry Cat Food</div>
+            </div>
+
+            <div class="foods" data-name="d-6">
+                <img src="../pics/dry-food-6.png">
+                <h3>Wellness Core</h3>
+                <div class="name">Dry Cat Food</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NOTES -->
+    <div class="notes">
+        <h3>Notes:</h3>
+        <p>Feeding your cat the appropriate amount of a well-balanced diet is vital to the maintenance
+            of overall health and well-being, just as eating a well-balanced diet is for us.
+            In order to understand how and what to feed cats, it is necessary to understand how
+            the nutritional requirements of the cat have developed through the process of biological
+            evolution.</p>
+    </div>
+
+
+    <script>
+        // DROPDOWN MENU
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+
+        let preveiwContainer = document.querySelector('.products-preview');
+        let previewBox = preveiwContainer.querySelectorAll('.preview');
+
+        document.querySelectorAll('.food-container .foods').forEach(product => {
+            product.onclick = () => {
+                preveiwContainer.style.display = 'flex';
+                let name = product.getAttribute('data-name');
+                previewBox.forEach(preview => {
+                    let target = preview.getAttribute('data-target');
+                    if (name == target) {
+                        preview.classList.add('active');
+                    }
+                });
+            };
+        });
+
+        previewBox.forEach(close => {
+            close.querySelector('.fa-times').onclick = () => {
+                close.classList.remove('active');
+                preveiwContainer.style.display = 'none';
+            };
+        });
+
+        function search() {
+            let filter = document.getElementById('find').value.toUpperCase();
+            let item = document.querySelectorAll('.foods');
+            let l = document.getElementsByTagName('h3');
+            for (var i = 0; i <= l.length; i++) {
+                let a = item[i].getElementsByTagName('h3')[0];
+                let value = a.innerHTML || a.innerText || a.textContent;
+                if (value.toUpperCase().indexOf(filter) > -1) {
+                    item[i].style.display = "";
+                } else {
+                    item[i].style.display = "none";
+                }
+            }
+        }
+
+        $(window).on('load', function () {
+            setTimeout(function () {
+                $('.page-loader').fadeOut('slow');
+            }, 1000);
+        });
+    </script>
+
+</body>
+
+</html>

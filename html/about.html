@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Claws | ABOUT</title>
+    <link rel="icon" href="../pics/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/about.css">
+    <script src="https://kit.fontawesome.com/b9a52165aa.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="page-loader">
+        <div>
+            <img class="spinner" src="../pics/icon-2.png" width="50%">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="logo">
+            <a href="../index.html"><img src="../pics/icon-2.png"></a>
+        </div>
+        <div class="text-box">
+            <div class="email-icon">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="email">
+                <h2>jerson.mamangun@gmail.com</h2>
+            </div>
+        </div>
+        <div class="text-box">
+            <div class="phone-icon">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="phone">
+                <h2>09635338631</h2>
+            </div>
+        </div>
+        <div class="soc-med">
+            <div class="facebook">
+                <a target="_self" href="https://web.facebook.com/profile.php?id=100091626772999"><i
+                        class="fa-brands fa-square-facebook"></i></a>
+            </div>
+            <div class="instagram">
+                <a target="_self" href="https://instagram.com/urban_claws?igshid=NjNlMDhmYTc="><i
+                        class="fa-brands fa-square-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAV-BAR -->
+    <div class="header">
+        <div class="logo"></div>
+        <div class="navbar">
+            <ul class="links">
+                <li><a href="../html/home.html">Home</a></li>
+                <li><a href="../html/breeds.html">Breeds</a></li>
+                <li><a href="../html/foods.html">Foods</a></li>
+                <li><a href="../html/toys.html">Toys</a></li>
+                <li><a href="../html/about.html">About</a></li>
+            </ul>
+
+            <!-- DROPDOWN MENU -->
+            <div class="dropdown_menu">
+                <li><a href="../html/home.html">Home</a></li>
+                <li><a href="../html/breeds.html">Breeds</a></li>
+                <li><a href="../html/foods.html">Foods</a></li>
+                <li><a href="../html/toys.html">Toys</a></li>
+                <li><a href="../html/about.html">About</a></li>
+            </div>
+
+            <!-- SEARCH BAR -->
+            <div class="search-box">
+                <input type="text" class="search" id="find" placeholder="Search" onkeyup="search()">
+                <span class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+            </div>
+
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT ME -->
+    <div class="section">
+        <div class="section-container">
+            <div class="content-section">
+                <div class="title">
+                    <h1>About</h1>
+                </div>
+                <div class="content">
+                    <p>Welcome to this cat website, a place where cat lovers can come together to learn,
+                        share and connect with other feline enthusiasts from all around the world.
+                        This website is dedicated to all things cats, from their adorable antics to their
+                        unique personalities and everything in between. On this website, you might see a few
+                        cat breeds that are famous and can be seen daily around the world, as well as a few
+                        foods like vegetable, wet, and dry cat food. I also use a few toys that have high
+                        ratings when it comes to feeding and entertaining cats. <br>
+                        As of 2023, The International Cat Association (TICA) recognizes 73 standardized breeds,
+                        the Cat Fanciers' Association (CFA) recognizes 45, the Fédération Internationale Féline
+                        (FIFe) recognizes 50, the Governing Council of the Cat Fancy (GCCF) recognizes 45,
+                        and the World Cat Federation (WCF) recognizes 69.</p>
+                </div>
+                <div class="container-2">
+                    <div class="text-box">
+                        <div class="email-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="email">
+                            <h2>jerson.mamangun@gmail.com</h2>
+                        </div>
+                    </div>
+                    <div class="text-box">
+                        <div class="phone-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="phone">
+                            <h2>09635338631</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="social">
+                    <a href="https://www.facebook.com/jersonescleto.mamangun" target="_self"><i
+                            class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://twitter.com/_jrsnnnn" target="_self"><i class="fab fa-square-twitter"></i></a>
+                    <a href="https://www.instagram.com/shiveroooo/" target="_self"><i
+                            class="fa-brands fa-square-instagram"></i></a>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="../pics/profile.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // DROPDOWN MENU
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+
+        $(window).on('load', function () {
+            setTimeout(function () {
+                $('.page-loader').fadeOut('slow');
+            }, 1000);
+        });
+    </script>
+</body>
+
+</html>

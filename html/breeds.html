@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Claws | BREEDS</title>
+    <link rel="icon" href="../pics/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/breeds.css">
+    <script src="https://kit.fontawesome.com/b9a52165aa.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="page-loader">
+        <div>
+            <img class="spinner" src="../pics/icon-2.png" width="50%">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="logo">
+            <a href="../index.html"><img src="../pics/icon-2.png"></a>
+        </div>
+        <div class="text-box">
+            <div class="email-icon">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="email">
+                <h2>jerson.mamangun@gmail.com</h2>
+            </div>
+        </div>
+        <div class="text-box">
+            <div class="phone-icon">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="phone">
+                <h2>09635338631</h2>
+            </div>
+        </div>
+        <div class="soc-med">
+            <div class="facebook">
+                <a target="_self" href="https://web.facebook.com/profile.php?id=100091626772999"><i
+                        class="fa-brands fa-square-facebook"></i></a>
+            </div>
+            <div class="instagram">
+                <a target="_self" href="https://instagram.com/urban_claws?igshid=NjNlMDhmYTc="><i
+                        class="fa-brands fa-square-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAV-BAR -->
+    <div class="header">
+        <div class="logo"></div>
+        <div class="navbar">
+            <ul class="links">
+                <li><a href="../html/home.html">Home</a></li>
+                <li><a href="../html/breeds.html">Breeds</a></li>
+                <li><a href="../html/foods.html">Foods</a></li>
+                <li><a href="../html/toys.html">Toys</a></li>
+                <li><a href="../html/about.html">About</a></li>
+            </ul>
+
+            <!-- DROPDOWN MENU -->
+            <div class="dropdown_menu">
+                <li><a href="../html/home.html">Home</a></li>
+                <li><a href="../html/breeds.html">Breeds</a></li>
+                <li><a href="../html/foods.html">Foods</a></li>
+                <li><a href="../html/toys.html">Toys</a></li>
+                <li><a href="../html/about.html">About</a></li>
+            </div>
+
+            <!-- SEARCH BAR -->
+            <div class="search-box">
+                <input type="text" class="search" id="find" placeholder="Search" onkeyup="search()">
+                <span class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+            </div>
+
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- BREEDS OF CATS -->
+    <div class="breeds">
+        <div class="cats">
+            <img src="../pics/cat-10.png">
+            <div class="cats-text">
+                <p>The American Shorthair is a medium-sized cat, but she is a very powerful one.
+                    She is heavily muscled and has heavy boning.
+                    Her rounded, thick appearance makes you realize that she will be heavy when you pick her up.</p>
+            </div>
+            <div class="cats-name">
+                <h2>American Shorthair</h2>
+            </div>
+        </div>
+
+        <div class="cats">
+            <img src="../pics/cat-12.png">
+            <div class="cats-text">
+                <p>The Bengal truly does remind you of a wild cat in appearance.
+                    She is a large cat and is heavily muscled, although the boning may be
+                    surprisingly light for her size.</p>
+            </div>
+            <div class="cats-name">
+                <h2>Bengal cat</h2>
+            </div>
+        </div>
+
+        <div class="cats">
+            <img src="../pics/cat-2.png">
+            <div class="cats-text">
+                <p>The British Shorthair is a medium- to large-sized cat, and she is a very powerful one.
+                    She is heavily muscled and has heavy boning. She has a rounded, thick appearance.
+                </p>
+            </div>
+            <div class="cats-name">
+                <h2>British Shorthair</h2>
+            </div>
+        </div>
+
+        <div class="cats">
+            <img src="../pics/cat-6.png">
+            <div class="cats-text">
+                <p>The Burmese is a cat that is round all over.
+                    The head is round, the tips of the ears are round, the eyes,
+                    chin and even the feet are round. </p>
+            </div>
+            <div class="cats-name">
+                <h2>Burmese cat</h2>
+            </div>
+        </div>
+
+        <div class="cats">
+            <img src="../pics/cat-3.png">
+            <div class="cats-text">
+                <p>The Maine Coon is medium to large, and males are larger than females.
+                    The body is long and rectangular and the tail is also long.
+                </p>
+            </div>
+            <div class="cats-name">
+                <h2>Maine Coon</h2>
+            </div>
+        </div>
+
+        <div class="cats">
+            <img src="../pics/cat-8.png">
+            <div class="cats-text">
+                <p>The Norwegian Forest Cat is a large, heavily boned, heavily coated cat.
+                    She is a muscular and looks like the hunter she used to be.</p>
+            </div>
+            <div class="cats-name">
+                <h2>Norwegian Forest cat</h2>
+            </div>
+        </div>
+
+        <div class="cats">
+            <img src="../pics/cat-9.png">
+            <div class="cats-text">
+                <p>The Persian is an extreme-looking breed.
+                    The body is short, but thick with thick legs and a short, thick neck.
+                    The tail is short and the ears are small.
+                    The head is round with large, round eyes.</p>
+            </div>
+            <div class="cats-name">
+                <h2>Persian cat</h2>
+            </div>
+        </div>
+
+        <div class="cats">
+            <img src="../pics/cat-4.png">
+            <div class="cats-text">
+                <p>A Ragdoll with a colorpoint pattern has a light body color with contrasting,
+                    darker color on the extremities, mask, and ears.</p>
+            </div>
+            <div class="cats-name">
+                <h2>Ragdoll</h2>
+            </div>
+        </div>
+
+        <div class="cats">
+            <img src="../pics/cat-11.png">
+            <div class="cats-text">
+                <p>The head is round and the folded ears heighten that illusion of roundness.
+                    The eyes are very round, bright and clear.
+                    The legs appear round, as does the tail in comparison to its length.</p>
+            </div>
+            <div class="cats-name">
+                <h2>Scottish Fold</h2>
+            </div>
+        </div>
+
+        <div class="cats">
+            <img src="../pics/cat-1.png">
+            <div class="cats-text">
+                <p>The Siamese is a long, elegant cat.
+                    The body is long, the neck is long,
+                    the legs and tail are long.
+                </p>
+            </div>
+            <div class="cats-name">
+                <h2>Siamese cat</h2>
+            </div>
+        </div>
+
+        <div class="cats">
+            <img src="../pics/cat-7.png">
+            <div class="cats-text">
+                <p>Siberian cats, also called Siberian Forest cats or Moscow Longhairs,
+                    are a medium to large semi-longhair breed with males ranging from 15 to 20 pounds
+                    and females only slightly smaller.</p>
+            </div>
+            <div class="cats-name">
+                <h2>Siberian cat</h2>
+            </div>
+        </div>
+
+        <div class="cats">
+            <img src="../pics/cat-5.png">
+            <div class="cats-text">
+                <p>The sphynx is a medium-sized cat with a striking appearance, identified by her hairless,
+                    wrinkled skin and large ears.
+                    She has a sleek, muscular body that is dense and heavy for her size.</p>
+            </div>
+            <div class="cats-name">
+                <h2>Sphynx cat</h2>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // DROPDOWN MENU
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+
+        // SEARCH BAR
+        function search() {
+            let filter = document.getElementById('find').value.toUpperCase();
+            let item = document.querySelectorAll('.cats');
+            let l = document.getElementsByTagName('h2');
+            for (var i = 0; i <= l.length; i++) {
+                let a = item[i].getElementsByTagName('h2')[0];
+                let value = a.innerHTML || a.innerText || a.textContent;
+                if (value.toUpperCase().indexOf(filter) > -1) {
+                    item[i].style.display = "";
+                } else {
+                    item[i].style.display = "none";
+                }
+            }
+        }
+
+        $(window).on('load', function () {
+            setTimeout(function () {
+                $('.page-loader').fadeOut('slow');
+            }, 1000);
+        });
+    </script>
+</body>
+
+</html>

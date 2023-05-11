@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Claws | TOYS</title>
+    <link rel="icon" href="../pics/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/toys.css">
+    <script src="https://kit.fontawesome.com/b9a52165aa.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="page-loader">
+        <div>
+            <img class="spinner" src="../pics/icon-2.png" width="50%">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="logo">
+            <a href="../index.html"><img src="../pics/icon-2.png"></a>
+        </div>
+        <div class="text-box">
+            <div class="email-icon">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="email">
+                <h2>jerson.mamangun@gmail.com</h2>
+            </div>
+        </div>
+        <div class="text-box">
+            <div class="phone-icon">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="phone">
+                <h2>09635338631</h2>
+            </div>
+        </div>
+        <div class="soc-med">
+            <div class="facebook">
+                <a target="_self" href="https://web.facebook.com/profile.php?id=100091626772999"><i
+                        class="fa-brands fa-square-facebook"></i></a>
+            </div>
+            <div class="instagram">
+                <a target="_self" href="https://instagram.com/urban_claws?igshid=NjNlMDhmYTc="><i
+                        class="fa-brands fa-square-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAV-BAR -->
+    <div class="header">
+        <div class="logo"></div>
+        <div class="navbar">
+            <ul class="links">
+                <li><a href="../html/home.html">Home</a></li>
+                <li><a href="../html/breeds.html">Breeds</a></li>
+                <li><a href="../html/foods.html">Foods</a></li>
+                <li><a href="../html/toys.html">Toys</a></li>
+                <li><a href="../html/about.html">About</a></li>
+            </ul>
+
+            <!-- DROPDOWN MENU -->
+            <div class="dropdown_menu">
+                <li><a href="../html/home.html">Home</a></li>
+                <li><a href="../html/breeds.html">Breeds</a></li>
+                <li><a href="../html/foods.html">Foods</a></li>
+                <li><a href="../html/toys.html">Toys</a></li>
+                <li><a href="../html/about.html">About</a></li>
+            </div>
+
+            <!-- SEARCH BAR -->
+            <div class="search-box">
+                <input type="text" class="search" id="find" placeholder="Search" onkeyup="search()">
+                <span class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+            </div>
+
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOYS -->
+    <div class="toys">
+        <div class="section">
+            <div class="text">
+                <h1>BENTOPAL Automatic Cat Toy</h1>
+                <p>
+                    It is a motorized, robotic toy with various ways to charm your cat.
+                    It has a hanging feather toy attached to two large wheels that swivel, turn,
+                    and rotate, moving the toy around the room in an erratic pattern.
+            </div>
+            <img src="../pics/toy-1.png">
+            </p>
+        </div>
+
+        <div class="section-2">
+            <div class="text">
+                <h1>FurryFido Laser Cat Toy</h1>
+                <p>
+                    It enhances the laser experience for both cats and humans with its ability
+                    to recharge the internal battery via USB, and its four modes—off, on,
+                    white light, and UV light.
+            </div>
+            <img src="../pics/toy-2.png">
+            </p>
+        </div>
+
+        <div class="section-3">
+            <div class="text">
+                <h1>SmartyKat Silly Swinger 2-in-1 Wand Cat Toy</h1>
+                <p>
+                    On top of its alluring design made to sway in front of your cat,
+                    it also features catnip, crinkles, and a detachable plush toy,
+                    making it our top pick for the best wand.      
+            </div>
+            <img src="../pics/toy-3.png">
+            </p>
+        </div>
+
+        <div class="section-4">
+            <div class="text">
+                <h1>HEXBUG nano Robotic Cat Toy</h1>
+                <p>
+                    IDesigned to look like an insect and made in an array of colorful options,
+                    this robotic cat toy uses vibration technology to move around your home,
+                    enticing your cat to chase, pounce, and swat.
+
+            </div>
+            <img src="../pics/toy-4.png">
+            </p>
+        </div>
+
+        <div class="section-5">
+            <div class="text">
+                <h1>PetSafe Bolt Interactive Laser Toy</h1>
+                <p>
+                    This small device ( 3 x 3 x 9 inches) is battery-powered and offers hours of
+                    entertainment. It's great for playtime with you as well as solo play when you are 
+                    busy or away from home.
+            </div>
+            <img src="../pics/toy-5.png">
+            </p>
+        </div>
+
+        <div class="section-6">
+            <div class="text">
+                <h1>SmartyKat Skitter Critters Catnip Cat Toys</h1>
+                <p>
+                    These mouse-shaped toys satisfy your cat's prey instinct,
+                    while the catnip inside stimulates your kitty, encourages play,
+                    and, eventually, reduces stress and promotes relaxation.
+            </div>
+            <img src="../pics/toy-6.png">
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // DROPDOWN MENU
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+
+        function search() {
+            let filter = document.getElementById('find').value.toUpperCase();
+            let item = document.querySelectorAll('.text');
+            let l = document.getElementsByTagName('h1');
+            for (var i = 0; i <= l.length; i++) {
+                let a = item[i].getElementsByTagName('h1')[0];
+                let value = a.innerHTML || a.innerText || a.textContent;
+                if (value.toUpperCase().indexOf(filter) > -1) {
+                    item[i].style.display = "";
+                } else {
+                    item[i].style.display = "none";
+                }
+            }
+        }
+
+        $(window).on('load', function () {
+            setTimeout(function () {
+                $('.page-loader').fadeOut('slow');
+            }, 1000);
+        });
+    </script>
+</body>
+
+</html>
